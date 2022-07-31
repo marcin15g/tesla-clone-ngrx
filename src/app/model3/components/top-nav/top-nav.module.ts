@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { TopNavRoutingModule } from './top-nav-routing.module';
 import { TopNavComponent } from './top-nav.component';
 import { MatToolbarModule } from '@angular/material/toolbar'
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 
@@ -14,7 +15,8 @@ import { MatToolbarModule } from '@angular/material/toolbar'
   imports: [
     CommonModule,
     TopNavRoutingModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTabsModule
   ],
   exports: [
     TopNavComponent

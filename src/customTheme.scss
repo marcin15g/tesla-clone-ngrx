@@ -1,0 +1,23 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+  $primary: mat-palette($mat-gray,100);
+  $accent: mat-palette($mat-gray,800);
+
+  $theme: mat-light-theme($primary, $accent);
+
+  .bg-primary {
+    background-color: mat-color($primary);
+  }
+  .bg-accent {
+    background-color: mat-color($accent);
+  }
+
+  .color-primary {
+    color: mat-color($primary);
+  }
+  .color-accent {
+    color: mat-color($accent);
+  }
+
+@include angular-material-theme($theme);

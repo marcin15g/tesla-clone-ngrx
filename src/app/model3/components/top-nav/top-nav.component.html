@@ -1,4 +1,13 @@
-<mat-toolbar color="primary">
-    <span>Tesla Clone</span>
 
-</mat-toolbar>
+<nav mat-tab-nav-bar [backgroundColor]="background" mat-align-tabs="center">
+    <a
+        mat-tab-link
+        *ngFor="let tab of navTabs"
+        [routerLink]="tab.route"
+        [active]="activeTab === tab"
+        (click)="activeTab = tab"
+    >
+        {{ tab.label }}
+    </a>
+</nav>
+
